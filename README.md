@@ -12,7 +12,7 @@
 1) in GitBash - git checkout -b [your_name]  (git checkout -b aleksandr_uljanov )
 2) git push --set-upstream origin [your_name]
 //after exam tasks completed:
-4) git add SEF/src/*
+4) git add 
 5) git commit -m "[comment]"  - save local changes 
 6) git push - push changes to git server
 
