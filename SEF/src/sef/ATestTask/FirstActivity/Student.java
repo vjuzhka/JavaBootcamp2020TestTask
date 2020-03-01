@@ -23,7 +23,8 @@ public class Student extends Person {
         this.schoolName = schoolName;
     }
 
-    public String announce() {return "I am study in university  " + getSchoolName();
+    public String announce(String st) {return "I am study in university  " + getSchoolName();
     }
 
 }
+

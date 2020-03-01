@@ -61,13 +61,12 @@ public class Employee extends Person implements Comparable<Employee>{
 
     //TODO 3 override method announce()
     public String announce() {
-     return "My name is  " + getFirstName() + getSecondName() + " and I am " + getAge() + "years old. " + " I am work as " + getJobTitle() + getCompanyName();
+     return "My name is  " + getFirstName() + getSecondName() + " and I am " + getAge() + "years old. " + " I am work as " + getJobTitle() + getCompanyName() + "Salary: " + getSalary();
     }
 
 
     @Override
     public int compareTo(Employee o) {
-        return (this.getSalary() < o.getSalary() ? -1 :
-                (this.getAge() == o.getAge() ? 0 : 1));
+        return (Double.compare(this.getSalary(), o.getSalary()));
     }
     }

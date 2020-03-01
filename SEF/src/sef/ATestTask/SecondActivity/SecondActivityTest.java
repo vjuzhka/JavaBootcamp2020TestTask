@@ -1,9 +1,11 @@
 package sef.ATestTask.SecondActivity;
 // Complete Code
 import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-public class SecondActivityTest extends TestCase {
+public class SecondActivityTest extends Test {
 
 
 	//TODO try to achieve 100% of test coverage

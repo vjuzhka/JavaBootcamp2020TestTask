@@ -27,7 +27,10 @@ private int age;
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
+	public void setFirstName(String firstName) throws Exception {
+		if (firstName.matches(".*\\d.*")) {
+			throw new Exception("Invalid firstName!");
+		}
 		this.firstName = firstName;
 	}
 
@@ -45,7 +48,10 @@ private int age;
 		return secondName;
 	}
 
-	public void setSecondName(String secondName) {
+	public void setSecondName(String secondName) throws Exception {
+		if (secondName.matches(".*\\d.*")) {
+			throw new Exception("Invalid secondName!");
+		}
 		this.secondName = secondName;
 	}
 
